@@ -34,9 +34,6 @@ const Intro = () => {
             Beautiful and cross-browser layout for any device.
           </span>
         </div>
-        <Link to="contact" smooth={true} spy={true}>
-          <button className="button i-button">Hire me</button>
-        </Link>
         {/* social icons */}
         <div className="i-icons">
           <a href="https://github.com/innazozulia">

@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "./Services.css";
 import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
+import WWW from "../../img/www.png";
+import Design from "../../img/design.png";
+import Developer from "../../img/developer.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from "./resume.pdf";
@@ -45,9 +45,9 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={HeartEmoji}
+            emoji={Design}
             heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            detail={"Figma, Sketch, Photoshop"}
           />
         </motion.div>
         {/* second card */}
@@ -57,9 +57,9 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Glasses}
+            emoji={WWW}
             heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            detail={"HTML, CSS, JavaScript, Reactjs, Nextjs, Nodejs, Express"}
           />
         </motion.div>
         {/* 3rd */}
@@ -69,11 +69,9 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Humble}
-            heading={"UI/UX"}
-            detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
-            }
+            emoji={Developer}
+            heading={"Additional Skills"}
+            detail={"Preprocessors CSS, GIT, Gulp"}
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>
