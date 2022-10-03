@@ -1,9 +1,16 @@
 import React, { useContext } from "react";
 import { themeContext } from "../../Context";
+
+import { motion } from "framer-motion";
 import "./Experience.css";
 const Experience = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+  const transition = {
+    duration: 1,
+    type: "spring",
+  };
 
   return (
     <>
@@ -14,12 +21,19 @@ const Experience = () => {
         <div class="box" data-aos="fade-up">
           <span>(2021-2022)</span>
           <h3>Frontend developer (Freelance)</h3>
-          <ul>
-            <li class="list">Direct communication with customers</li>
-            <li class="list">Helping customers with website design</li>
-            <li class="list">Website development</li>
-            <li class="list">Support of the existing web projects</li>
-          </ul>
+          <motion.div
+            whileHover={{ scale: 0.8 }}
+            whileTap={{ scale: 0.8 }}
+            style={{ x: 100 }}
+            transition={transition}
+          >
+            <ul>
+              <li class="list">Direct communication with customers</li>
+              <li class="list">Helping customers with website design</li>
+              <li class="list">Website development</li>
+              <li class="list">Support of the existing web projects</li>
+            </ul>
+          </motion.div>
         </div>
         <div class="box" data-aos="fade-up">
           <span>(2021)</span>
